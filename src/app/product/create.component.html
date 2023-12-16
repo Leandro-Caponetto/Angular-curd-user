@@ -1,0 +1,41 @@
+<app-menu></app-menu>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-4 mx-auto">
+      <h4 class="text-center mb-3">Create User</h4>
+
+      <form>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Name"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            name="price"
+            placeholder="N° Cliente"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <button class="btn btn-outline-success w-100 mb-3">
+          <i class="fas fa-plus-circle"></i> Create
+        </button>
+        <button class="btn btn-outline-primary w-100" routerLink="/">
+          <i class="fas fa-arrow-alt-circle-left"></i> Back
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

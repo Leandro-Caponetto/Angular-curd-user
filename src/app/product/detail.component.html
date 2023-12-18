@@ -1,15 +1,17 @@
 <app-menu></app-menu>
 
-<div class="container">
+<div class="container" *ngIf="product">
   <div class="row mt-5">
     <div class="col-md-4 mx-auto">
       <div class="card shadow">
         <div class="card-header text-center">Detail</div>
         <div class="card-body">
           <ul class="list-group list-group-fush">
-            <li class="list-group-item"><b>ID: </b>1</li>
-            <li class="list-group-item"><b>Name: </b>User 1</li>
-            <li class="list-group-item"><b>Price: </b>$ 100</li>
+            <li class="list-group-item"><b>ID: </b>{{ product.id }}</li>
+            <li class="list-group-item"><b>Name: </b>{{ product.name }}</li>
+            <li class="list-group-item">
+              <b>N° Client: </b>{{ product.price }}
+            </li>
           </ul>
         </div>
         <div class="card-footer">

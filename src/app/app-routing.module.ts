@@ -11,7 +11,7 @@ const routes: Routes = [
     component: LisComponent
   },
   {
-    path: 'detail',
+    path: 'detail/:id',
     component: DetailComponent
   },
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
     component: CreateComponent
   },
   {
-    path: 'update',
+    path: 'update/:id',
     component: UpdateComponent
   },
   {
